@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VERVEA - Fuel your style – Feel the verve</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header__content">
+                <div class="header__logo">
+    <a href="#/">
+        <img src="https://i.ibb.co/n86y4T7q/IMG-3567.png" alt="VERVEA Logo" style="height:48px;">
+    </a>
+</div>
+                <nav class="header__nav">
+                    <a href="#/" class="nav-link">Home</a>
+                    <a href="#/men" class="nav-link">Men</a>
+                    <a href="#/women" class="nav-link">Women</a>
+                </nav>
+                <div class="header__actions">
+                    <button class="search-btn" aria-label="Search">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="11" cy="11" r="8"></circle>
+                            <path d="21 21l-4.35-4.35"></path>
+                        </svg>
+                    </button>
+                    <button class="cart-btn" aria-label="Cart">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+                            <line x1="3" y1="6" x2="21" y2="6"></line>
+                            <path d="M16 10a4 4 0 0 1-8 0"></path>
+                        </svg>
+                        <span class="cart-count">0</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main">
+        <!-- Home View -->
+        <div id="home-view" class="view">
+            <!-- Hero Carousel Section -->
+            <section class="hero-carousel">
+                <div class="carousel-container">
+                    <div class="carousel-wrapper" id="carousel-wrapper">
+                        <!-- Carousel slides will be populated by JS -->
+                    </div>
+                    <button class="carousel-btn carousel-btn--prev" id="carousel-prev" aria-label="Previous slide">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="15,18 9,12 15,6"></polyline>
+                        </svg>
+                    </button>
+                    <button class="carousel-btn carousel-btn--next" id="carousel-next" aria-label="Next slide">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="9,18 15,12 9,6"></polyline>
+                        </svg>
+                    </button>
+                    <div class="carousel-indicators" id="carousel-indicators">
+                        <!-- Indicators will be populated by JS -->
+                    </div>
+                </div>
+            </section>
+
+            <!-- Hero Tagline -->
+            <section class="hero-tagline">
+                <div class="container">
+                    <h2 class="hero__tagline">Fuel your style – Feel the verve</h2>
+                    <div class="hero__cta">
+                        <button class="btn btn--primary btn--lg" onclick="window.location.hash='#/men'">Shop Men</button>
+                        <button class="btn btn--primary btn--lg" onclick="window.location.hash='#/women'">Shop Women</button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Countdown Section -->
+            <section class="countdown-section">
+                <div class="container">
+                    <div class="countdown-banner">
+                        <h3>Launch Sale - Up to 70% OFF</h3>
+                        <div class="countdown" id="hero-countdown">
+                            <div class="countdown__item">
+                                <span class="countdown__number" id="days">0</span>
+                                <span class="countdown__label">Days</span>
+                            </div>
+                            <div class="countdown__item">
+                                <span class="countdown__number" id="hours">0</span>
+                                <span class="countdown__label">Hours</span>
+                            </div>
+                            <div class="countdown__item">
+                                <span class="countdown__number" id="minutes">0</span>
+                                <span class="countdown__label">Min</span>
+                            </div>
+                            <div class="countdown__item">
+                                <span class="countdown__number" id="seconds">0</span>
+                                <span class="countdown__label">Sec</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Highlight Products Carousel -->
+            <section class="highlights">
+                <div class="container">
+                    <h3 class="highlights__title">Trending Products</h3>
+                    <div class="highlights__carousel" id="highlights-carousel">
+                        <!-- Populated by JS -->
+                    </div>
+                </div>
+            </section>
+
+            <!-- Sales & Discounts -->
+            <section class="sales-section">
+                <div class="container">
+                    <h3 class="sales-section__title">Flash Sales & Limited Time Offers</h3>
+                    <div class="sales-strip" id="sales-strip">
+                        <!-- Populated by JS -->
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- Collection View -->
+        <div id="collection-view" class="view hidden">
+            <div class="container">
+                <div class="collection-header">
+                    <h2 id="collection-title">Collection</h2>
+                    <div class="collection-filters">
+                        <select id="price-filter" class="form-control">
+                            <option value="">Sort by Price</option>
+                            <option value="low-high">Price: Low to High</option>
+                            <option value="high-low">Price: High to Low</option>
+                        </select>
+                        <select id="condition-filter" class="form-control">
+                            <option value="">All Conditions</option>
+                            <option value="New">New (Dead Stock)</option>
+                            <option value="Used">Used</option>
+                        </select>
+                        <select id="rating-filter" class="form-control">
+                            <option value="">All Ratings</option>
+                            <option value="4">4+ Stars</option>
+                            <option value="3">3+ Stars</option>
+                        </select>
+                        <input type="text" id="search-filter" class="form-control" placeholder="Search brands or products...">
+                    </div>
+                </div>
+                <div class="products-grid" id="products-grid">
+                    <!-- Populated by JS -->
+                </div>
+            </div>
+        </div>
+
+        <!-- Checkout View -->
+        <div id="checkout-view" class="view hidden">
+            <div class="container">
+                <div class="checkout-container">
+                    <h2 class="checkout-title">Checkout</h2>
+                    <div class="checkout-content">
+                        <!-- Order Summary -->
+                        <div class="checkout-section">
+                            <h3>Order Summary</h3>
+                            <div class="order-items" id="checkout-items">
+                                <!-- Populated by JS -->
+                            </div>
+                        </div>
+
+                        <!-- Customer Information -->
+                        <div class="checkout-section">
+                            <h3>Customer Information</h3>
+                            <form id="checkout-form" class="checkout-form">
+                                <div class="form-group">
+                                    <label for="full-name" class="form-label">Full Name *</label>
+                                    <input type="text" id="full-name" class="form-control" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="email" class="form-label">Email Address *</label>
+                                    <input type="email" id="email" class="form-control" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="phone" class="form-label">Phone Number *</label>
+                                    <input type="tel" id="phone" class="form-control" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="address" class="form-label">Shipping Address *</label>
+                                    <textarea id="address" class="form-control" rows="3" required></textarea>
+                                </div>
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <label for="city" class="form-label">City *</label>
+                                        <input type="text" id="city" class="form-control" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="pincode" class="form-label">Pincode *</label>
+                                        <input type="text" id="pincode" class="form-control" required>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+
+                        <!-- Payment Options -->
+                        <div class="checkout-section">
+                            <h3>Payment Method</h3>
+                            <div class="payment-options">
+                                <label class="payment-option">
+                                    <input type="radio" name="payment" value="card" checked>
+                                    <span class="payment-label">Credit/Debit Card</span>
+                                </label>
+                                <label class="payment-option">
+                                    <input type="radio" name="payment" value="upi">
+                                    <span class="payment-label">UPI (GPay, PhonePe, Paytm)</span>
+                                </label>
+                                <label class="payment-option">
+                                    <input type="radio" name="payment" value="netbanking">
+                                    <span class="payment-label">Net Banking</span>
+                                </label>
+                                <label class="payment-option">
+                                    <input type="radio" name="payment" value="cod">
+                                    <span class="payment-label">Cash on Delivery</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <!-- Promo Code -->
+                        <div class="checkout-section">
+                            <h3>Promo Code</h3>
+                            <div class="promo-code-section">
+                                <div class="promo-input-group">
+                                    <input type="text" id="promo-code" class="form-control" placeholder="Enter promo code">
+                                    <button type="button" class="btn btn--secondary" id="apply-promo">Apply</button>
+                                </div>
+                                <div class="promo-message" id="promo-message"></div>
+                                <div class="promo-suggestions">
+                                    <small>Try: VERVEA10, LAUNCH20, NEWUSER15</small>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Order Total -->
+                        <div class="checkout-section order-total-section">
+                            <h3>Order Total</h3>
+                            <div class="order-total">
+                                <div class="total-row">
+                                    <span>Subtotal:</span>
+                                    <span id="checkout-subtotal">₹0</span>
+                                </div>
+                                <div class="total-row discount-row hidden" id="discount-row">
+                                    <span>Discount:</span>
+                                    <span id="checkout-discount">-₹0</span>
+                                </div>
+                                <div class="total-row">
+                                    <span>Shipping:</span>
+                                    <span id="checkout-shipping">₹99</span>
+                                </div>
+                                <div class="total-row final-total">
+                                    <span>Total:</span>
+                                    <span id="checkout-total">₹0</span>
+                                </div>
+                            </div>
+                            <button type="button" class="btn btn--primary btn--full-width btn--lg" id="place-order">
+                                Place Order
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <div class="footer__section">
+                    <h4>VERVEA</h4>
+                    <p>Fuel your style – Feel the verve</p>
+                </div>
+                <div class="footer__section">
+                    <h5>Quick Links</h5>
+                    <ul>
+                        <li><a href="#" onclick="showReturnPolicy()">Return Policy</a></li>
+                        <li><a href="#" onclick="alert('Contact: support@vervea.com')">Contact</a></li>
+                        <li><a href="#" onclick="alert('FAQ section coming soon!')">FAQ</a></li>
+                        <li><a href="#" onclick="alert('About VERVEA coming soon!')">About</a></li>
+                    </ul>
+                </div>
+                <div class="footer__section">
+                    <h5>Follow Us</h5>
+                    <div class="social-links">
+                        <a href="#" target="_blank" aria-label="Facebook">📘</a>
+                        <a href="#" target="_blank" aria-label="Instagram">📷</a>
+                        <a href="#" target="_blank" aria-label="Twitter">🐦</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <p>&copy; 2025 VERVEA. All rights reserved. Designed for Indian customers.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Product Detail Modal -->
+    <div id="product-modal" class="modal hidden">
+        <div class="modal__backdrop"></div>
+        <div class="modal__content">
+            <button class="modal__close" aria-label="Close modal">&times;</button>
+            <div class="product-detail">
+                <div class="product-detail__images">
+                    <img id="product-main-image" src="" alt="" class="product-detail__main-image">
+                    <div class="product-detail__thumbnails">
+                        <img src="" alt="" class="thumbnail active">
+                        <img src="" alt="" class="thumbnail">
+                        <img src="" alt="" class="thumbnail">
+                    </div>
+                </div>
+                <div class="product-detail__info">
+                    <h3 id="product-detail-name"></h3>
+                    <div class="product-detail__brand" id="product-detail-brand"></div>
+                    <div class="product-detail__rating">
+                        <div class="rating" id="product-detail-rating"></div>
+                        <span class="review-count" id="product-detail-review-count"></span>
+                    </div>
+                    <div class="product-detail__price">
+                        <span class="current-price" id="product-detail-price"></span>
+                        <span class="original-price" id="product-detail-mrp"></span>
+                        <span class="discount" id="product-detail-discount"></span>
+                    </div>
+                    <div class="product-detail__condition" id="product-detail-condition"></div>
+                    <div class="product-detail__countdown" id="product-detail-countdown"></div>
+                    <div class="product-detail__guarantee">
+                        <div class="guarantee-badge">
+                            <span class="trust-icon">✓</span>
+                            Each item is inspected and cleansed for quality and hygiene
+                        </div>
+                        <div class="return-policy">
+                            <strong>15-Day Return & Exchange Policy</strong>
+                        </div>
+                    </div>
+                    <button class="btn btn--primary btn--full-width" id="add-to-cart-btn">Add to Cart</button>
+                    <div class="product-detail__social">
+                        <button class="btn btn--outline btn--sm" onclick="alert('Share functionality')">Share</button>
+                        <button class="btn btn--outline btn--sm" onclick="alert('Wishlist functionality')">♡ Wishlist</button>
+                    </div>
+                    <div class="product-detail__reviews" id="product-detail-reviews">
+                        <!-- Populated by JS -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Cart Sidebar -->
+    <div id="cart-sidebar" class="cart-sidebar hidden">
+        <div class="cart-sidebar__backdrop"></div>
+        <div class="cart-sidebar__content">
+            <div class="cart-sidebar__header">
+                <h3>Shopping Cart</h3>
+                <button class="cart-sidebar__close" aria-label="Close cart">&times;</button>
+            </div>
+            <div class="cart-sidebar__items" id="cart-items">
+                <!-- Populated by JS -->
+            </div>
+            <div class="cart-sidebar__empty hidden" id="cart-empty">
+                <p>Your cart is empty</p>
+                <button class="btn btn--primary" onclick="closeCart()">Continue Shopping</button>
+            </div>
+            <div class="cart-sidebar__footer" id="cart-footer">
+                <div class="cart-total">
+                    <div class="total-row">
+                        <span>Subtotal:</span>
+                        <span id="cart-subtotal">₹0</span>
+                    </div>
+                </div>
+                <div class="return-notice">
+                    <small>✓ 15-Day Return & Exchange Policy</small>
+                </div>
+                <button class="btn btn--primary btn--full-width" id="checkout-btn">
+                    Proceed to Checkout
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Return Policy Modal -->
+    <div id="return-policy-modal" class="modal hidden">
+        <div class="modal__backdrop"></div>
+        <div class="modal__content">
+            <button class="modal__close" aria-label="Close modal">&times;</button>
+            <div class="policy-content">
+                <h3>15-Day Return & Exchange Policy</h3>
+                <div class="policy-text">
+                    <p><strong>Easy Returns & Exchanges</strong></p>
+                    <ul>
+                        <li>15 days return/exchange from delivery date</li>
+                        <li>Items must be unused and in original condition</li>
+                        <li>All tags and labels must be intact</li>
+                        <li>Free pickup from your doorstep</li>
+                        <li>Refund processed within 7-10 business days</li>
+                        <li>Exchange subject to stock availability</li>
+                    </ul>
+                    <p><strong>Quality Guarantee:</strong> All used items are thoroughly cleaned, sanitized, and quality-checked before shipping.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
