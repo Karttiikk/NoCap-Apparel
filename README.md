@@ -56,19 +56,26 @@ You need a modern web browser and a code editor (like VS Code with the Live Serv
 
     If you are using Visual Studio Code, you can use the **Live Server** extension to launch the project.
 
-## File Structure
+## Project Structure
 
-The project follows a simple and intuitive file structure:
+Here is the file and folder structure for the VERVEA project.
 
-/vervea-project
-|-- index.html # Main HTML file
-|-- /css
-| |-- style.css # All styles for the website
-|-- /js
-| |-- main.js # Core JavaScript for interactivity
-|-- /assets
-| |-- /images # For logos, icons, and hero images
-|-- README.md # You are here!
+/vervea-project/
+│
+├── 📄 **index.html**           # The main entry point and structure of the website.
+│
+├── 📁 **css/**
+│   └── 📄 style.css         # All custom styles, layout, and responsive design rules.
+│
+├── 📁 **js/**
+│   └── 📄 main.js           # JavaScript for all interactivity (countdown, cart, filters, etc.).
+│
+├── 📁 **assets/**
+│   └── 📁 **images/**           # Contains all static images like the logo, hero banners, and icons.
+│
+└── 📄 **README.md**             # The project documentation file you are creating.
+
+
 
 
 
