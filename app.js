@@ -69,7 +69,7 @@ const carouselSlides = [
 // Promo codes
 const promoCodes = [
     {
-        code: "VERVEA10",
+        code: "NOCAP10",
         discount: 10,
         type: "percentage",
         description: "10% off on all items"
