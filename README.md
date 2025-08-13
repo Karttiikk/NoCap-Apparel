@@ -1,96 +1,42 @@
-# VERVEA - Premium Branded Fashion E-commerce Website
+# NoCap-Apparel – Streetwear & Lifestyle E-commerce Website
 
-**Tagline:** Fuel your style - Feel the verve.
+**Tagline:** No Cap. All Style.
 
-VERVEA is a modern, visually captivating e-commerce storefront designed for a premium dropshipping business in India. The platform specializes in offering both carefully cleansed, high-quality used branded apparel and new "dead stock" clothing. The project focuses on a clean, minimal, and user-friendly interface inspired by industry leaders like Myntra and Amazon, but streamlined for a niche market.
+NoCap-Apparel is a modern, bold, and visually engaging e-commerce storefront designed for the streetwear and lifestyle fashion market. The platform showcases curated apparel and accessories with a clean, minimal interface while reflecting the edge and energy of urban fashion culture.
 
 ## Live Demo
 
-**[Link to your live deployed website here]**
+**https://karttiikk.github.io/NoCap-Apparel**
 
 ## Key Features
 
-The website is built with a rich set of features designed to provide a seamless and engaging shopping experience.
+The website is built with a set of features that deliver a smooth and immersive shopping experience:
 
-*   **Dynamic Homepage**: A vibrant hero section featuring high-resolution model photography and an urgent, live countdown timer for the launch sale.
-*   **Expanded Product Catalog**: Features an extensive inventory with over 24 unique products for both the men's and women's sections.
-*   **Clear Product Labeling**: Each product is explicitly marked as either **"Used"** or **"New (Dead Stock)"** on product cards and detail pages, ensuring full transparency with customers.
-*   **Interactive Product Grids**:
-    *   Clean grid layout showcasing products with high-quality images.
-    *   Product cards include the brand name, price in Indian Rupees (₹), and star ratings.
-    *   Interactive hover effects reveal "Quick View" and "Add to Cart" buttons.
-*   **Advanced Filtering**: Users can easily filter products by price, brand, and type (Used/New).
-*   **Robust Image Handling**: Implemented a multi-source, redundant image loading system with fallbacks to prevent broken images and ensure a 99.9% load success rate.
-*   **Responsive Design**: A mobile-first approach ensures a flawless experience on desktops, tablets, and smartphones.
-*   **Custom Branding**: Integrates the official VERVEA logo and brand tagline into a sticky header for consistent brand presence.
-*   **Trust & Security**: The design includes trust badges for secure payments, authenticity guarantees, and easy returns to build customer confidence.
+* **Dynamic Landing Page** – Eye-catching hero section with brand imagery and call-to-action buttons.
+* **Product Highlights** – Stylish product grid with pricing and visual focus on the apparel.
+* **Responsive Design** – Mobile-first layout that adapts to all screen sizes.
+* **Custom Branding** – Integrates the NoCap-Apparel logo, tagline, and color palette for consistent identity.
+* **Clean User Interface** – Minimalist design for a distraction-free shopping experience.
+* **Fast Loading** – Lightweight structure for quick load times without unnecessary dependencies.
 
 ## Tech Stack
 
-This project was built using core front-end technologies, focusing on performance, accessibility, and modern UI/UX principles.
+This project is built using core front-end web technologies for maximum accessibility and performance:
 
-*   **HTML5**: For semantic and accessible markup.
-*   **CSS3**: For custom styling, animations, and responsive layouts using Flexbox and Grid.
-*   **JavaScript (ES6+)**: For dynamic functionality, including the sale countdown timer, interactive cart, product filtering, and handling image loading logic.
+* **HTML5** – Semantic structure for clarity and SEO.
+* **CSS3** – Custom styles, animations, and responsive layouts using Flexbox/Grid.
+* **JavaScript (ES6+)** – Interactive UI components and basic dynamic features.
 
 ## Getting Started
 
-To get a local copy up and running, follow these simple steps.
+Follow these steps to run the project locally:
 
 ### Prerequisites
 
-You need a modern web browser and a code editor (like VS Code with the Live Server extension is recommended).
+A modern web browser and a code editor (VS Code with the Live Server extension is recommended).
 
 ### Installation
 
-1.  **Clone the repository:**
-    ```
-    git clone https://github.com/your-username/vervea-project.git
-    ```
-2.  **Navigate to the project directory:**
-    ```
-    cd vervea-project
-    ```
-3.  **Open the project:**
-    Open the `index.html` file in your browser. For the best experience and to handle all JavaScript modules correctly, it's recommended to serve the project using a local server.
-
-    If you are using Visual Studio Code, you can use the **Live Server** extension to launch the project.
-
-## Project Structure
-
-Here is the file and folder structure for the VERVEA project.
-
-/vervea-project/
-│
-├── 📄 **index.html**           # The main entry point and structure of the website.
-│
-├── 📁 **css/**
-│   └── 📄 style.css         # All custom styles, layout, and responsive design rules.
-│
-├── 📁 **js/**
-│   └── 📄 main.js           # JavaScript for all interactivity (countdown, cart, filters, etc.).
-│
-├── 📁 **assets/**
-│   └── 📁 **images/**           # Contains all static images like the logo, hero banners, and icons.
-│
-└── 📄 **README.md**             # The project documentation file you are creating.
-
-
-
-
-
-## Contributing
-
-Contributions are what make the open-source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
-
-If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement".
-
-1.  Fork the Project
-2.  Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3.  Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4.  Push to the Branch (`git push origin feature/AmazingFeature`)
-5.  Open a Pull Request
-
-## License
-
-Distributed under the MIT License. See `LICENSE` for more information.
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/Karttiikk/NoCap-Apparel.git
